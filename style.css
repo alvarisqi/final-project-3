@@ -84,3 +84,24 @@ h2{
 .image-right{
     padding-top: 80px;
 }
+
+
+/* Section 4 */
+.card-left-sec4{
+    float: left;
+    padding-top: 6%;
+}
+.card-right-sec4{
+    float: right;
+    padding-top: 6%;
+    padding-right: 2%;
+    margin-bottom: 6%
+}
+
+
+/* Footer */
+#footer{
+    background-color: #69D2E7;
+    width: 100%;
+    
+}
