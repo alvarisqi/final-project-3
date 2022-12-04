@@ -1,4 +1,4 @@
-/* Portofolio */
+/* Section 3 - Portofolio */
 .project-left-1{
    float: left;
 }
@@ -136,10 +136,8 @@
 #see {
     /* float: right; */
     margin-top: 25%;
-    margin-bottom: 8%;
+    margin-bottom: 6%;
     text-align: center;
-    /* margin-right: 40%; */
-    /* margin-left: 10%; */
 }
 
 /* Section 4 */
