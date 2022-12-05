@@ -1,0 +1,189 @@
+/* Section 3 - Portofolio */
+.project-left-1{
+   float: left;
+}
+.text-right-1{
+    float:right;
+    padding-right: 7%;
+    font-family: 'Source Serif Pro', serif;
+    
+}
+#bg-card-1{
+    background-color: rgb(184, 158, 190);
+}
+.text-left-2{
+    text-align: right;
+    float: left;
+    padding-left: 5%;
+    font-family: 'Source Serif Pro', serif;
+}
+.project-2{
+    margin-top: 45%;
+    padding-bottom: 43%;
+}
+.img-right-2{
+    float: right;
+}
+#bg-card-2{
+    background-color:rgb(86, 62, 85);
+    margin-bottom: 6%;
+}
+
+.img-left-3{
+    float: left;
+    /* margin-top: 25%; */
+}
+.text-right-3{
+    float: right;
+    /* margin-top: 6%; */
+    padding-right: 8%;
+    font-family: 'Source Serif Pro', serif;
+}
+#bg-card-3{
+    background-color: rgb(225, 152, 163);
+}
+/* Section 3 */
+.carousel{
+    background-color:#69D2E7;
+}
+.h2{
+    text-align: center;
+    padding-bottom: 50px;
+    color: aliceblue;
+    font-family: 'Source Serif Pro', serif;
+    
+}
+.main-img{
+    /* padding-bottom: 20px; */
+    border-radius: 10px;
+}
+.second-img{
+    border-radius: 8px;
+    margin-top: 20px;
+   
+}
+/* Content left */
+.content-left{
+    float: left;
+    margin-top: 15%;
+    margin-bottom: 10%;
+   
+}
+/* Content Right */
+.content-right{
+    float: right;
+    margin-right: 3%;
+    margin-top: 5%;
+    
+    /* margin-bottom: 10%; */
+    /* padding-right: 120px; */
+}
+
+#card-body {
+    background-color:#69D2E7; 
+}
+#text-title{
+    font-size:xx-large;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.text-card{
+    font-weight: lighter;
+    font-size:4mm;
+    opacity: 0.5;
+    font-family: 'Josefin Sans', sans-serif;
+    /* color: #C6D4E1; */
+}
+.btn {
+    background: linear-gradient(270deg, #2A86FF 0%, #9AD1F1 83.85%);
+    border: 2px solid #33CCCC;   
+}
+.content-left-2{ 
+    float: left; 
+}
+.text-content-3 {
+    padding-top: 11%;
+    font-size:xx-large;
+    font-weight:bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.content-right-2{
+    float: right;
+    padding-top: 6%;
+    /* padding-bottom: 15%; */
+}
+.text-second {
+    font-weight: lighter;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#background-white1 {
+    background-color: white;
+}
+.img-center{
+    padding-left: 50%;
+    position: absolute;
+    
+}
+
+#bg-card{
+    background-color: #F38630;
+}
+.image-right{
+    padding-top: 80px;
+    float: right;
+}
+#see {
+    /* float: right; */
+    margin-top: 25%;
+    margin-bottom: 6%;
+    text-align: center;
+}
+
+/* Section 4 */
+.card-left-sec4{
+    float: left;
+    padding-top: 6%;
+}
+.card-right-sec4{
+    float: right;
+    padding-top: 6%;
+    padding-right: 5%;
+    margin-bottom: 6%
+}
+.text-1{
+    color:#3F3D56;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+span{
+    color: lightsalmon;
+}
+.text-2{
+    color: #1c323e;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    padding-bottom: 2%;
+
+}
+.text2-contact{
+    color: #3F3D56;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+.form-label {
+    color: #3F3D56;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 800;
+}
+.form-control{
+    color: #C6D4E1;
+}
+/* Footer */
+#footer{
+    background-color: #69D2E7;
+    width: 100%;
+    
+}
