@@ -324,46 +324,57 @@
 }
 .text-right-1{
     float:right;
-    padding-right: 7%;
+    padding-right: 8%;
     font-family: 'Source Serif Pro', serif;
-    
+    color: white;  
+}
+.text-card {
+  color: #ffff69;
 }
 #bg-card-1{
-    background-color: rgb(184, 158, 190);
+    background-color: #5D58E9;
+}
+#bg-card-2{
+  background-color:#EB2A05;
+}
+#bg-card-3{
+  background-color: #F38630;
+}
+#bg-card-4{
+  background-color: #EAA9DA;
 }
 .text-left-2{
     text-align: right;
     float: left;
-    padding-left: 5%;
+    padding-left: 11%;
     font-family: 'Source Serif Pro', serif;
+    color: white;
 }
-
+.text-left-4{
+  text-align: right;
+  float: left;
+  padding-left: 11%;
+  font-family: 'Source Serif Pro', serif;
+  color: white;
+}
 .img-right-2{
     float: right;
-}
-#bg-card-2{
-    background-color:rgb(86, 62, 85);
-    margin-bottom: 6%;
 }
 .project-1{
   margin-top: -5%;
 }
 .img-left-3{
     float: left;
-    /* margin-top: 25%; */
 }
 .text-right-3{
     float: right;
-    /* margin-top: 6%; */
-    padding-right: 8%;
+    padding-right: 9%;
     font-family: 'Source Serif Pro', serif;
+    color: white;
 }
-#bg-card-3{
-    background-color: rgb(225, 152, 163);
-}
-/* Section 3 */
+
 .carousel{
-    background-color:#69D2E7;
+    background-color:#263573;
 }
 .h2{
     text-align: center;
@@ -371,31 +382,6 @@
     color: aliceblue;
     font-family: 'Source Serif Pro', serif;
     
-}
-.main-img{
-    /* padding-bottom: 20px; */
-    border-radius: 10px;
-}
-.second-img{
-    border-radius: 8px;
-    margin-top: 20px;
-   
-}
-/* Content left */
-.content-left{
-    float: left;
-    margin-top: 15%;
-    margin-bottom: 10%;
-   
-}
-/* Content Right */
-.content-right{
-    float: right;
-    margin-right: 3%;
-    margin-top: 5%;
-    
-    /* margin-bottom: 10%; */
-    /* padding-right: 120px; */
 }
 
 #card-body {
@@ -411,95 +397,168 @@
     font-size:4mm;
     opacity: 0.5;
     font-family: 'Josefin Sans', sans-serif;
-    /* color: #C6D4E1; */
 }
 .btn {
-    background: linear-gradient(270deg, #2A86FF 0%, #9AD1F1 83.85%);
+    background: linear-gradient(270deg, #2A86FF 0%, #F38630 116.43%);
     border: 2px solid #33CCCC;   
 }
-.content-left-2{ 
-    float: left; 
+#see{
+  height: 40px;
+  width: 140px;
+  color: white;
+  background: linear-gradient(270deg, #2A86FF 0%, #F38630 116.43%);
+  line-height: 15px;
+  letter-spacing: 0px;
+  border: none;
+  margin-right: 42%;
+  margin-bottom: 5%;
+  float:right ;
 }
-.text-content-3 {
-    padding-top: 11%;
-    font-size:xx-large;
-    font-weight:bold;
-    font-family: 'Josefin Sans', sans-serif;
+#b4, #b3, #b2, #b1{
+  border: none;
+}
+#send {
+  border: none;
+}
+@media screen and (max-width: 992px) {
+  .text-right-1, .text-right-3 {
+    padding-right: 0px;
+  }
+  .project-left-1, .img-left-3 {
+    width: 50%;
+  }
+  .text-left-2, .text-left-4 {
+    padding-left: 0px;
+  }
+  .img-right-2 {
+    width: 48%;
+  }
+  .project-1  {
+    margin-top: -10%;
+  }
+  .project-2, .project-3, .project-4 {
+    margin-top: -5%;
+  }
+  .text-left-4 {
+    margin-left: 3%;
+  }
+  .text-right-3 {
+    margin-right: 1%;
+  }
+
 }
 
-.content-right-2{
-    float: right;
-    padding-top: 6%;
-    /* padding-bottom: 15%; */
-}
-.text-second {
-    font-weight: lighter;
-    font-family: 'Josefin Sans', sans-serif;
-}
-#background-white1 {
-    background-color: white;
-}
-.img-center{
-    padding-left: 50%;
-    position: absolute;
-    
+@media screen and (max-width: 768px) {
+  .text-right-1, .text-right-3 {
+    padding-right: 0px;  
+  }
+  .project-left-1, .img-left-3 {
+    width: 40%;
+  }
+  .text-left-2 {
+    padding-left: 0px;
+  }
+  .text-left-4 {
+    padding-left: 0;
+  }
+  .img-right-2 {
+    width: 44%;
+  }
+  .card-title {
+    font-size: medium;
+  }
+  .card-subtitle, .text-card {
+    font-size: smaller;
+  }
+  .project-1  {
+    margin-top: -15%;
+  }
+  .project-2, .project-3, .project-4{
+    margin-top: -8%;
+  }
+  .buton {
+    width: 150px;
+    font-size: 2px;
+    margin-top: -5%;
+  }
+
 }
 
-#bg-card{
-    background-color: #F38630;
-}
-.image-right{
-    padding-top: 80px;
-    float: right;
-}
-#see {
-    /* float: right; */
-    margin-top: 25%;
-    margin-bottom: 6%;
+@media screen and (max-width: 576px) {
+  #see {
+    margin-right: 35%;
+    margin-top: -25px;
+  }
+  .project-1 {
+    margin-top: -25%;
+  }
+  .card-title, .card-subtitle {
     text-align: center;
+  }
+  .buton {
+    margin-top: -10%;
+  }
+  .project-2, .project-3, .project-4 {
+    margin-top: -20%;
+  }
+  .text-right-3, .text-right-1 {
+    margin-top: 6%;
+  }
+  .img-right-2 {
+    margin-bottom: 2%;
+  }
+  .title-3 {
+    margin-left: 10%;
+  }
+  .project-left-1, .img-left-3, .img-right-2, .img-right-4 {
+    width: 100%;
+  }
+  .text-right-1{
+    padding-right: 4%;  
+  }
+  .text-right-3 {
+    padding-right: 6%;
+  }
+  .text-left-2, .text-left-4 {
+    padding-left: 13%;
+  }
+
 }
+
 
 /* Section 4 */
-.card-left-sec4{
-    float: left;
-    padding-top: 6%;
+.container-question {
+  font-family: "Basic";
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 5%;
 }
-.card-right-sec4{
-    float: right;
-    padding-top: 6%;
-    padding-right: 5%;
-    margin-bottom: 6%
+.title-colomn {
+  font-size: 21px;
+  line-height: 38px;
+  color: #020e35;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.text-1{
-    color:#3F3D56;
-    font-family: 'Source Serif Pro', serif;
-    font-weight: bolder;
-    font-size: xx-large;
+.second-colomn {
+  color: #020e35;
 }
-span{
-    color: lightsalmon;
+.d-sign {
+  line-height: 110px;
+  color: #F38630;
 }
-.text-2{
-    color: #1c323e;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: large;
-    font-weight: bolder;
-    padding-bottom: 2%;
 
+/* Kolom 2 */
+.form-label-question {
+  font-weight: 400;
+  line-height: 22px;
+  color: #2c3241;
 }
-.text2-contact{
-    color: #3F3D56;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
+.text-placeholder-question {
+  font-size: 18px;
+  line-height: 36px;
+  color: #2c3241;
 }
-.form-label {
-    color: #3F3D56;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 800;
-}
-.form-control{
-    color: #C6D4E1;
-}
+
 /* Footer */
 #footer{
     background-color: #69D2E7;
