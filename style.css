@@ -41,9 +41,10 @@
       letter-spacing: 1px;
     }
     
-    #header .logo h1 a{
-      color: #000747;
+    #header .logo h3 a{
+      color: #fff;
       text-decoration: none;
+      align-items: center;
     }
     
     #header .logo img {
@@ -328,12 +329,46 @@
 
     /* Services */
 
-    .MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
-    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
-        .MultiCarousel .MultiCarousel-inner .item { float: left;}
-        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
-    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
-    .MultiCarousel .leftLst { left:0; }
-    .MultiCarousel .rightLst { right:0; }
+    .project-left-1{
+      float: left;
+   }
+   .text-right-1{
+       float:right;
+       padding-right: 7%;
+       font-family: 'Source Serif Pro', serif;
+       
+   }
+   #bg-card-1{
+       background-color: rgb(184, 158, 190);
+   }
+   .text-left-2{
+       text-align: right;
+       float: left;
+       padding-left: 5%;
+       font-family: 'Source Serif Pro', serif;
+   }
+   
+   .img-right-2{
+       float: right;
+   }
+   #bg-card-2{
+       background-color:rgb(86, 62, 85);
+       margin-bottom: 6%;
+   }
+   .project-1{
+     margin-top: -5%;
+   }
+   .img-left-3{
+       float: left;
+       /* margin-top: 25%; */
+   }
+   .text-right-3{
+       float: right;
+       /* margin-top: 6%; */
+       padding-right: 8%;
+       font-family: 'Source Serif Pro', serif;
+   }
+   #bg-card-3{
+       background-color: rgb(225, 152, 163);
+   }
     
-        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
