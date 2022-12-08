@@ -25,11 +25,11 @@
     
           <nav id="navbar" class="navbar">
             <ul>
-              <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+              <li><a class="nav-link scrollto" href="#">Home</a></li>
               <li><a class="nav-link scrollto" href="#about">About Us</a></li>
               <li><a class="nav-link scrollto " href="#services">Services</a></li>
               <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-              <li><a class="nav-link scrollto" href="#portfolio">Contact Us</a></li>
+              <li><a class="nav-link scrollto active" href="#contact">Contact Us</a></li>
             </ul>
           </nav>
     
@@ -84,42 +84,95 @@
 
             <div class="section-title" data-aos="fade-up">
                 <h2>Our Valuable Services</h2>
-              </div>
-            <!-- Slideshow container -->
-            <div class="slideshow-container">
+            </div>
 
-                <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="img/travel.png" style="width:100%">
-                <div class="text">Caption Text</div>
+              <div class="carousel-inner">
+                <div class="card">
+                  <img src="..." class="d-block w-100" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title 1</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                          card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
                 </div>
-            
-                <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="img2.jpg" style="width:100%">
-                <div class="text">Caption Two</div>
+                <div class="card">
+                  <img src="..." class="d-block w-100" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title 2</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                          card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
                 </div>
-            
-                <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="img3.jpg" style="width:100%">
-                <div class="text">Caption Three</div>
+                <div class="card">
+                  <img src="..." class="d-block w-100" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title 3</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                          card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
                 </div>
-            
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
-            
-            <!-- The dots/circles -->
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
-        </section>
-      </div>
+                <div class="card">
+                  <img src="..." class="d-block w-100" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title 4</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                          card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="..." class="d-block w-100" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title 5</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                          card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+
+      <script>
+        var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+        var cardWidth = $(".carousel-item").width();
+        var scrollPosition = 0;
+        $(".carousel-control-next").on("click", function () {
+          if (scrollPosition < (carouselWidth - cardWidth * 4)) { //check if you can go any further
+            scrollPosition += cardWidth;  //update scroll position
+            $(".carousel-inner").animate({ scrollLeft: scrollPosition },600); //scroll left
+          }
+        });
+        $(".carousel-control-prev").on("click", function () {
+        if (scrollPosition > 0) {
+            scrollPosition -= cardWidth;
+            $(".carousel-inner").animate(
+              { scrollLeft: scrollPosition },
+              600
+            );
+          }
+        });
+        var multipleCardCarousel = document.querySelector(
+          "#carouselExampleControls"
+        );
+        if (window.matchMedia("(min-width: 768px)").matches) {
+          //rest of the code
+          var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+            interval: false
+          });
+        } else {
+          $(multipleCardCarousel).addClass("slide");
+        }
+      </script>
 </body>
 </html>
