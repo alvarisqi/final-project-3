@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
   <head>
@@ -50,7 +49,7 @@
               </button>
             </div>
             <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-right" data-aos-delay="200">
-              <img src="img/tourist.png" alt="">
+              <img src="img/web-development.png" alt="">
             </div>
           </div>
         </div>
@@ -204,71 +203,6 @@
         <div class="swiper-button-prev swiper-navBtn"></div>
       </div>
     </section>
-
-    <script>
-      const buttons = document.querySelectorAll('#send');
-
-      buttons.forEach(button => {
-        button.addEventListener('click', sendMessage)
-      })
-
-      function sendMessage() {
-        Swal.fire({
-          title: 'Message sent successfully! you will get a text back, thank you',
-          icon: 'success'
-        });
-      }
-      
-      const lists = document.querySelectorAll('#list-desti');
-
-      lists.forEach(button => {
-        button.addEventListener('click', kategori)
-      })
-
-      function kategori() {
-        Swal.fire({
-          title: 'Beach',
-          text: 'The Most Popular Destination Now',
-          imageUrl: 'img/main-destination.jpg',
-          imageWidth: 400,
-          imageHeight: 250,
-          imageAlt: 'Beach',
-        })
-        
-      }
-
-      const book = document.querySelectorAll('#see');
-
-      book.forEach(button => {
-        button.addEventListener('click', register)
-      })
-      
-      function register() { Swal.fire({
-        title: 'Register Form',
-        html: `<input type='text' id='login' class='swal2-input' placeholder='Username'>
-        <input type='text' id='telp' class='swal2-input' placeholder='no.telp'>
-        <input type='password' id='password' class='swal2-input' placeholder='Password'>
-        <input type='password' id='cpassword' class='swal2-input' placeholder='Confirm Password'>`,
-        confirmButtonText: 'Register',
-        focusConfirm: false,
-        preConfirm: () => {
-          const login = Swal.getPopup().querySelector('#login').value
-          const telp = Swal.getPopup().querySelector('#telp').value
-          const password = Swal.getPopup().querySelector('#password').value
-          const cpassword = Swal.getPopup().querySelector('#cpassword').value
-          if (!login ||!telp || !password ||!cpassword) {
-            Swal.showValidationMessage(`Please Register for your can booking`)
-          }
-          return { login: login, telp: telp, password: password, cpassword: cpassword }
-        }
-      }).then((result) => {
-        Swal.fire({
-          title: 'Register Successful',
-          icon: 'success'
-        })
-      })
-      }
-    </script>
     
   <!-- Swiper JS -->
   <script src="swiper-bundle.min.js"></script>
@@ -279,132 +213,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-  </body>
-=======
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="swiper-bundle.min.css">
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Patrick+Hand&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <title>Vacation Destinations</title>
-  </head>
-  <body>
-    <!-- Section 1 -->
-    <header id="header" class="fixed-top d-flex align-items-center">
-      <div class="container d-flex align-items-center justify-content-between">
-  
-        <div class="logo">
-          <a href="index.html"><img src="img/hot-air-balloon.png" alt=""></a>
-        </div>
-  
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li><a class="nav-link scrollto active" href="#home">Home</a></li>
-            <li><a class="nav-link scrollto" href="#about">About Us</a></li>
-            <li><a class="nav-link scrollto " href="#services">Services</a></li>
-            <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-          </ul>
-        </nav>
-  
-      </div>
-    </header>
-  
-    <section id="hero" class="d-flex align-items-center">
-  
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1 data-aos="fade-up">Vacation Destinations</h1>
-            <br>
-            <h2 data-aos="fade-up" data-aos-delay="400">Works off, the Sun is out and the time is right, so what are you waiting for? we are here to provide you with our hottest vacation destinations.</h2>
-  
-            <button type="button" class="btn btn-price" data-bs-toggle="modal" data-bs-target="#">
-              See Our Work
-            </button>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-right" data-aos-delay="200">
-            <img src="img/tourist.png" alt="">
-          </div>
-        </div>
-      </div>
-  
-    </section>
-    
-    <!-- Section 2 -->
-    <div id="main">
 
-      <section id="about" class="about">
-        <div class="container">
-  
-          <div class="section-title" data-aos="fade-up">
-            <h2>About Us</h2>
-          </div>
-  
-          <div class="row content">
-  
-            <div data-aos="fade-up" data-aos-delay="300">
-              <p>
-                  We are a full-service travel agency that specializes in creating custom travel experiences for its clients. Whether you’re looking for a romantic getaway, a family vacation, or an adventurous trip, We can help make it happen. The travel site sets customers up with experienced agents that work to understand your travel goals and budget, and then create a personalized itinerary that includes everything from flights and hotels to activities and dining.
-              </p>
-            </div>
-          </div>
-  
-        </div>
-      </section>
-    
-
-      <section id="services" class="services">
-        
-        <div class="section-title" data-aos="fade-up">
-            <h2>Our Valuable Services</h2>
-          </div>
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
-
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="img/travel.png" style="width:100%">
-            <div class="text">Caption Text</div>
-            </div>
-        
-            <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="img2.jpg" style="width:100%">
-            <div class="text">Caption Two</div>
-            </div>
-        
-            <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="img3.jpg" style="width:100%">
-            <div class="text">Caption Three</div>
-            </div>
-        
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-        
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-     </div>
-</section>
-
-     
       
     <!-- Section 3 -->
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" >
@@ -639,7 +448,7 @@
     </script>
 
     <!-- Swiper JS -->
-  <!-- <script src="swiper-bundle.min.js"></script> -->
+  <script src="swiper-bundle.min.js"></script>
 
   <!-- JavaScript -->
   <!-- <script src="script.js"></script> -->
@@ -648,5 +457,4 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
   </body>
->>>>>>> 5f2d7a9c1e3016e8ec3437d4541eb68390b396f7
 </html>
